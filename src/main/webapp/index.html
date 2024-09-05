@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bài tập tuần 3</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style/main.css" type="text/css">
+    </head>
+    <body>
+        <image src="img/images.png" alt="Hình ảnh bổ sung">
+        <h1>Survey</h1>
+        <p>If you have a moment, we'd appreciate it if you would fill out this survey</p>
+        <h2>Your imformation:</h2>
+        <form action="emailList" method="post">
+            <input type="hidden" name="action" value="add">
+            <label>First Name:</label>
+            <input type="text" name="firstName" required> <br>
+            <label>Last Name:</label>
+            <input type="text" name="lastName" required> <br>
+            <label>Email:</label>
+            <input type="email" name="email" required> <br>
+            <label>Date of birth:</label>
+            <input type="date" name="birthDate">
+            <h2>How did you hear about us?</h2>
+        <input type="radio" name="hear" value="Search Engine">Search Engine
+        <input type="radio" name="hear" value="Word of mount">Word of mount 
+        <input type="radio" name="hear" value="Social Media">Social media
+        <input type="radio" name="hear" value="Other">Other
+        <h2>Would you like to receive announcements about new CDs and special offers</h2>
+        <input type="checkbox" name="value" value="like"  >Yes, i'd like that <br>
+        <input type="checkbox" name="value" value="send">Yes, please send me the email announcement <br>
+        <p>Please contact me by: <select name="contact">
+                <option value="email_postal" selected>Email or postal</option>
+                <option value="email">Email only</option>
+                <option value="postal">Postal only</option>
+            </select> </p>
+                  
+            <input type="submit" value="Join Now" >
+        </form>
+       
+</html>
